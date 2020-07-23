@@ -17,6 +17,12 @@ font-family: 'Merriweather', serif;
 
 html {
     font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -25,10 +31,43 @@ html {
 @media screen and (max-width: 1440px) {
     /*header => nav bar*/
     .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        max-width: 1440px;
         background-color: #ef4e29;
-        padding: 1rem;
+        padding: 1rem 0;
     }
     /*nav bar left size*/
-    .nav__left-size {}
+    .nav__left-size {
+        font-size: 2rem;
+        font-weight: 600;
+        padding-left: 4rem;
+    }
+    /*nav bar right size*/
+    .nav__right-size {
+        padding-right: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+    .nav__right-size a {
+        margin-right: 1rem;
+    }
+    /*nav right button*/
+    #nav__right-size-button {
+        color: #ef4e29;
+        padding: .5rem 1rem;
+        background-color: white;
+        border-radius: .5rem;
+    }
+    /*nav right button hover*/
+    #nav__right-size-button:hover {
+        background-color: #ef4e29;
+        color: white;
+        border: white 1px solid;
+    }
 }

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BernardoAguayoOrtega/mention-design/issues"
   },
-  "homepage": "https://github.com/BernardoAguayoOrtega/mention-design#readme"
+  "homepage": "https://github.com/BernardoAguayoOrtega/mention-design#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0"
+  }
 }
