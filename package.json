@@ -1,0 +1,19 @@
+{
+  "name": "design-course",
+  "version": "1.0.0",
+  "description": "Mockuo about rethinking commenting system.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/mention-design.git"
+  },
+  "author": "Bernardo Aguayo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/mention-design/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/mention-design#readme"
+}
