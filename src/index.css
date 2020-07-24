@@ -1,10 +1,10 @@
 /*export fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 /*
 CSS rules to specify families
-font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
 */
 
 
@@ -17,7 +17,7 @@ font-family: 'Merriweather', serif;
 
 html {
     font-size: 20px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -41,6 +41,7 @@ img {
         max-width: 1440px;
         background-color: #ef4e29;
         padding: 1rem 0;
+        border-bottom: 3px rgb(255, 87, 49) solid;
     }
     /*nav bar left size*/
     .nav__left-size {
@@ -62,17 +63,58 @@ img {
         margin-right: 1rem;
     }
     /*nav right button*/
-    #nav__right-size-button {
+    #button-tomato {
+        transition: 1s;
         color: #ef4e29;
         padding: .5rem 1rem;
         background-color: white;
         border-radius: .5rem;
     }
     /*nav right button hover*/
-    #nav__right-size-button:hover {
+    #button-tomato:hover {
         background-color: #ef4e29;
         color: white;
         border: white 1px solid;
     }
     /*main section*/
+    .main {
+        color: white;
+        background-color: #ef4e29;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*main info section*/
+    .main__info-section {
+        padding: 15% 21% 10% 21%;
+    }
+    .main h1 {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .main p {
+        margin: 1rem 0;
+        font-weight: 400;
+        font-size: .8rem;
+    }
+    /*main info button*/
+    #button-purple {
+        transition: 2s;
+        color: white;
+        padding: .4rem 1rem;
+        background-color: #5c254a;
+        border-radius: .5rem;
+        text-transform: capitalize;
+        margin-top: 5rem;
+    }
+    #button-purple:hover {
+        background-color: #ef4e29;
+        color: #5c254a;
+    }
+    #button-purple:hover>i {
+        transform: translateX(1rem);
+        transition: 1s;
+    }
+    /*small text*/
 }
