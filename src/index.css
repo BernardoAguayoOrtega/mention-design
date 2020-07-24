@@ -199,5 +199,71 @@ img {
         background-color: #171219;
         display: grid;
         grid-template-rows: 12rem 1fr;
+        color: white;
+        padding: 1rem;
+    }
+    /*up section*/
+    .section-4__up {
+        padding: 5rem 20rem;
+        text-align: center;
+    }
+    .section-4__up h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .section-4__up p {
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+    /*down section*/
+    .section-4__down {
+        padding: 4.5rem 20rem;
+        margin: 0 auto;
+    }
+    .section-4__input {
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+    }
+    .section-4__input::placeholder {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs {
+        display: flex;
+        color: black;
+        font-weight: 300;
+    }
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        background-color: white;
+        width: 7.5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+    /*button*/
+    #section-4__button {
+        transition: .3s;
+        font-size: 1.1rem;
+        color: white;
+        background-color: #ef4e29;
+        margin-top: 1rem;
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+    }
+    /*button hover*/
+    #section-4__button:hover {
+        background-color: #171219;
+        font-size: 1.3rem;
+        transition: 1s;
+    }
+    #section-4__p {
+        font-size: .7rem;
     }
 }
