@@ -45,7 +45,7 @@ img {
     }
     /*nav bar left size*/
     .nav__left-size {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 600;
         padding-left: 4rem;
     }
@@ -265,5 +265,78 @@ img {
     }
     #section-4__p {
         font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*section 2*/
+    .section-2__down {
+        padding: 2rem;
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-2__down-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .section-2__down-card img {
+        max-width: 3rem;
+    }
+    /*section 3*/
+    .section-3__left {
+        padding: 5rem;
+    }
+    .section-3__right {
+        padding: 2rem;
+    }
+    /*section 4*/
+    .section-4__up {
+        padding: 5rem 8rem;
+    }
+    /*down*/
+    .section-4__down {
+        padding: 0;
+    }
+    .section-4__input {
+        width: 18rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .section-4__input::placeholder {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs {
+        display: flex;
+        color: black;
+        font-weight: 300;
+    }
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        background-color: white;
+        width: 6.5rem;
+        padding: .2rem 1rem;
+        border-radius: .5rem;
+    }
+    /*button*/
+    #section-4__button {
+        transition: .3s;
+        font-size: 1rem;
+        color: white;
+        background-color: #ef4e29;
+        margin-top: 1rem;
+        width: 18rem;
+        height: 1.8rem;
+        border-radius: .5rem;
     }
 }
