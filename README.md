@@ -1,2 +1,10 @@
-# mention-design
-Mockup about a rethinking commenting system.
+# Mention Design
+
+It's a exercise from a mockup
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
