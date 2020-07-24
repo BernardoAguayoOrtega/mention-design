@@ -305,38 +305,100 @@ img {
     .section-4__input {
         width: 18rem;
         height: 2rem;
-        border-radius: .5rem;
     }
     .section-4__input::placeholder {
         font-size: 1rem;
-        padding: .5rem;
+        padding: 1rem;
     }
     .section-4__down p {
         margin: 1rem 0;
         font-size: .9rem;
     }
     /*both inputs*/
-    .section-4__down-both-inputs {
-        display: flex;
-        color: black;
-        font-weight: 300;
-    }
     .section-4__down-both-inputs div {
         margin-right: 1rem;
-        background-color: white;
         width: 6.5rem;
         padding: .2rem 1rem;
-        border-radius: .5rem;
     }
     /*button*/
     #section-4__button {
-        transition: .3s;
         font-size: 1rem;
-        color: white;
-        background-color: #ef4e29;
-        margin-top: 1rem;
         width: 18rem;
         height: 1.8rem;
-        border-radius: .5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /*nav bar right size*/
+    .nav__right-size {
+        padding-right: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: .6rem;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+    /*main section*/
+    /*main info section*/
+    .main h1 {
+        font-size: 2rem;
+    }
+    .main p {
+        font-size: .55rem;
+    }
+    /*main info button*/
+    #button-purple {
+        font-size: .55rem;
+    }
+    /*section 3*/
+    .section-3__left {
+        padding: 3.5rem;
+    }
+    .section-3__left h1 {
+        font-size: 1rem;
+        width: 15rem;
+    }
+    .section-3__right {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+    }
+    /*section 4*/
+    /*section 4*/
+    .section-4__up {
+        padding: 5rem 8rem;
+    }
+    .section-4__up h1 {
+        font-size: 2rem;
+    }
+    .section-4__up p {
+        font-size: .8rem;
+    }
+    /*down*/
+    .section-4__input {
+        width: 15rem;
+        height: 1.5rem;
+    }
+    .section-4__input::placeholder {
+        font-size: .7rem;
+        padding: 1rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        width: 5rem;
+        padding: .2rem 1rem;
+        font-size: .6rem;
+    }
+    /*button*/
+    #section-4__button {
+        font-size: .8rem;
+        width: 15rem;
+        height: 1.5rem;
     }
 }
