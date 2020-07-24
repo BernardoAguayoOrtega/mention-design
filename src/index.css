@@ -194,4 +194,10 @@ img {
         transform: translateX(3rem);
         transition: 2s;
     }
+    /*section4*/
+    .section-4 {
+        background-color: #171219;
+        display: grid;
+        grid-template-rows: 12rem 1fr;
+    }
 }
