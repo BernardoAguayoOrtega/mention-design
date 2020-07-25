@@ -1,399 +1,404 @@
-            /*export fonts*/
-            
-            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-            /*
+/*export fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*
 CSS rules to specify families
 font-family: 'Open Sans', sans-serif;
 */
-            /*basic styles*/
-            
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            
-            html {
-                font-size: 20px;
-                font-family: 'Open Sans', sans-serif;
-            }
-            
-            a {
-                text-decoration: none;
-                color: white;
-            }
-            
-            img {
-                width: 100%;
-            }
-            /*desktop first*/
-            
-            @media screen and (max-width: 1440px) {
-                /*header => nav bar*/
-                .nav {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    width: 100%;
-                    max-width: 1440px;
-                    background-color: #ef4e29;
-                    padding: 1rem 0;
-                    border-bottom: 3px rgb(255, 87, 49) solid;
-                }
-                /*nav bar left size*/
-                .nav__left-size {
-                    font-size: 1rem;
-                    font-weight: 600;
-                    padding-left: 4rem;
-                }
-                /*nav bar right size*/
-                .nav__right-size {
-                    padding-right: 5rem;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    font-size: .8rem;
-                    font-weight: 100;
-                    text-transform: capitalize;
-                }
-                .nav__right-size a {
-                    margin-right: 1rem;
-                }
-                /*nav right button*/
-                #button-tomato {
-                    transition: 1s;
-                    color: #ef4e29;
-                    padding: .5rem 1rem;
-                    background-color: white;
-                    border-radius: .5rem;
-                }
-                /*nav right button hover*/
-                #button-tomato:hover {
-                    background-color: #ef4e29;
-                    color: white;
-                    border: white 1px solid;
-                }
-                /*main section*/
-                .main {
-                    color: white;
-                    background-color: #ef4e29;
-                    padding: 1rem;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                /*main info section*/
-                .main__info-section {
-                    padding: 15% 21% 10% 21%;
-                }
-                .main h1 {
-                    text-transform: capitalize;
-                    font-size: 2.5rem;
-                    font-weight: 600;
-                }
-                .main p {
-                    margin: 1rem 0;
-                    font-weight: 400;
-                    font-size: .8rem;
-                }
-                /*main info button*/
-                #button-purple {
-                    transition: 2s;
-                    color: white;
-                    padding: .4rem 1rem;
-                    background-color: #5c254a;
-                    border-radius: .5rem;
-                    text-transform: capitalize;
-                }
-                #button-purple:hover {
-                    background-color: #ef4e29;
-                    color: #5c254a;
-                }
-                #button-purple:hover>i {
-                    transform: translateX(1rem);
-                    transition: 1s;
-                }
-                /*section 2*/
-                .section-2 {
-                    background-color: white;
-                    color: rgb(33, 36, 41);
-                    display: grid;
-                    grid-template-rows: repeat(2, 1fr);
-                    padding: 5rem 0;
-                }
-                /*up side*/
-                .section-2__up {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-                .section-2__up h1 {
-                    font-weight: 600;
-                    text-align: center;
-                    width: 35rem;
-                    font-size: 3rem;
-                    padding: 1rem;
-                }
-                .section-2__up p {
-                    font-weight: 400;
-                    text-align: center;
-                    width: 30rem;
-                }
-                /*down side*/
-                .section-2__down {
-                    display: flex;
-                    padding: 0 5rem;
-                    justify-content: space-between;
-                }
-                /*cards*/
-                .section-2__down-card {
-                    width: 12rem;
-                    padding: 1rem;
-                    text-align: center;
-                }
-                .section-2__down-card h2 {
-                    font-size: 1rem;
-                    font-weight: 600;
-                    margin: 1rem 0;
-                }
-                .section-2__down-card p {
-                    font-size: .8rem;
-                }
-                .section-2__down-card img {
-                    max-width: 5rem;
-                }
-                /*section 3*/
-                .section-3 {
-                    padding: 1rem;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                /*left side*/
-                .section-3__left {
-                    padding: 8rem;
-                }
-                .section-3__left h1 {
-                    color: #6e7afc;
-                    font-weight: 600;
-                }
-                .section-3__left p {
-                    color: rgb(33, 36, 41);
-                    margin: 1rem 0;
-                }
-                #button {
-                    color: #6e7afc;
-                    font-weight: 600;
-                    text-transform: capitalize;
-                    font-size: .75rem;
-                }
-                /*hover button*/
-                #button:hover>i {
-                    transform: translateX(3rem);
-                    transition: 2s;
-                }
-                /*section4*/
-                .section-4 {
-                    background-color: #171219;
-                    display: grid;
-                    grid-template-rows: 12rem 1fr;
-                    color: white;
-                    padding: 1rem;
-                }
-                /*up section*/
-                .section-4__up {
-                    padding: 5rem 20rem;
-                    text-align: center;
-                }
-                .section-4__up h1 {
-                    font-size: 3rem;
-                    font-weight: 600;
-                }
-                .section-4__up p {
-                    margin-top: 2rem;
-                    font-weight: 400;
-                }
-                /*down section*/
-                .section-4__down {
-                    padding: 4.5rem 20rem;
-                    margin: 0 auto;
-                }
-                .section-4__input {
-                    width: 20rem;
-                    height: 2.5rem;
-                    border-radius: .5rem;
-                }
-                .section-4__input::placeholder {
-                    font-size: 1rem;
-                    padding: .5rem;
-                }
-                .section-4__down p {
-                    margin: 1rem 0;
-                    font-size: .9rem;
-                }
-                /*both inputs*/
-                .section-4__down-both-inputs {
-                    display: flex;
-                    color: black;
-                    font-weight: 300;
-                }
-                .section-4__down-both-inputs div {
-                    margin-right: 1rem;
-                    background-color: white;
-                    width: 7.5rem;
-                    padding: .5rem 1rem;
-                    border-radius: .5rem;
-                }
-                /*button*/
-                #section-4__button {
-                    transition: .3s;
-                    font-size: 1.1rem;
-                    color: white;
-                    background-color: #ef4e29;
-                    margin-top: 1rem;
-                    width: 20rem;
-                    height: 2.5rem;
-                    border-radius: .5rem;
-                }
-                /*button hover*/
-                #section-4__button:hover {
-                    background-color: #171219;
-                    font-size: 1.3rem;
-                    transition: 1s;
-                }
-                #section-4__p {
-                    font-size: .7rem;
-                }
-            }
-            
-            @media screen and (max-width: 1024px) {
-                /*section 2*/
-                .section-2__down {
-                    padding: 2rem;
-                    padding: .5rem;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                .section-2__down-card {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    margin: 0 auto;
-                    padding: 1rem;
-                }
-                .section-2__down-card img {
-                    max-width: 3rem;
-                }
-                /*section 3*/
-                .section-3__left {
-                    padding: 5rem;
-                }
-                .section-3__right {
-                    padding: 2rem;
-                }
-                /*section 4*/
-                .section-4__up {
-                    padding: 5rem 8rem;
-                }
-                /*down*/
-                .section-4__down {
-                    padding: 0;
-                }
-                .section-4__input {
-                    width: 18rem;
-                    height: 2rem;
-                }
-                .section-4__input::placeholder {
-                    font-size: 1rem;
-                    padding: 1rem;
-                }
-                .section-4__down p {
-                    margin: 1rem 0;
-                    font-size: .9rem;
-                }
-                /*both inputs*/
-                .section-4__down-both-inputs div {
-                    margin-right: 1rem;
-                    width: 6.5rem;
-                    padding: .2rem 1rem;
-                }
-                /*button*/
-                #section-4__button {
-                    font-size: 1rem;
-                    width: 18rem;
-                    height: 1.8rem;
-                }
-            }
-            
-            @media screen and (max-width:768px) {
-                /*nav bar right size*/
-                .nav__right-size {
-                    padding-right: 3rem;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    font-size: .6rem;
-                    font-weight: 100;
-                    text-transform: capitalize;
-                }
-                /*main section*/
-                /*main info section*/
-                .main h1 {
-                    font-size: 2rem;
-                }
-                .main p {
-                    font-size: .55rem;
-                }
-                /*main info button*/
-                #button-purple {
-                    font-size: .55rem;
-                }
-                /*section 3*/
-                .section-3__left {
-                    padding: 3.5rem;
-                }
-                .section-3__left h1 {
-                    font-size: 1rem;
-                    width: 15rem;
-                }
-                .section-3__right {
-                    padding: 0rem;
-                    display: flex;
-                    align-items: center;
-                }
-                /*section 4*/
-                /*section 4*/
-                .section-4__up {
-                    padding: 5rem 8rem;
-                }
-                .section-4__up h1 {
-                    font-size: 2rem;
-                }
-                .section-4__up p {
-                    font-size: .8rem;
-                }
-                /*down*/
-                .section-4__input {
-                    width: 15rem;
-                    height: 1.5rem;
-                }
-                .section-4__input::placeholder {
-                    font-size: .7rem;
-                    padding: 1rem;
-                }
-                .section-4__down p {
-                    margin: 1rem 0;
-                    font-size: .9rem;
-                }
-                /*both inputs*/
-                .section-4__down-both-inputs div {
-                    margin-right: 1rem;
-                    width: 5rem;
-                    padding: .2rem 1rem;
-                    font-size: .6rem;
-                }
-                /*button*/
-                #section-4__button {
-                    font-size: .8rem;
-                    width: 15rem;
-                    height: 1.5rem;
-                }
-            }
+
+
+/*basic styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*desktop first*/
+
+@media screen and (max-width: 1440px) {
+    /*header => nav bar*/
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 1440px;
+        background-color: #ef4e29;
+        padding: 1rem 0;
+        border-bottom: 3px rgb(255, 87, 49) solid;
+    }
+    /*nav bar left size*/
+    .nav__left-size {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-left: 4rem;
+    }
+    /*nav bar right size*/
+    .nav__right-size {
+        padding-right: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: .8rem;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+    .nav__right-size a {
+        margin-right: 1rem;
+    }
+    /*nav right button*/
+    #button-tomato {
+        transition: 1s;
+        color: #ef4e29;
+        padding: .5rem 1rem;
+        background-color: white;
+        border-radius: .5rem;
+    }
+    /*nav right button hover*/
+    #button-tomato:hover {
+        background-color: #ef4e29;
+        color: white;
+        border: white 1px solid;
+    }
+    /*main section*/
+    .main {
+        color: white;
+        background-color: #ef4e29;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*main info section*/
+    .main__info-section {
+        padding: 15% 21% 10% 21%;
+    }
+    .main h1 {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .main p {
+        margin: 1rem 0;
+        font-weight: 400;
+        font-size: .8rem;
+    }
+    /*main info button*/
+    #button-purple {
+        transition: 2s;
+        color: white;
+        padding: .4rem 1rem;
+        background-color: #5c254a;
+        border-radius: .5rem;
+        text-transform: capitalize;
+    }
+    #button-purple:hover {
+        background-color: #ef4e29;
+        color: #5c254a;
+    }
+    #button-purple:hover>i {
+        transform: translateX(1rem);
+        transition: 1s;
+    }
+    /*section 2*/
+    .section-2 {
+        background-color: white;
+        color: rgb(33, 36, 41);
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        padding: 5rem 0;
+    }
+    /*up side*/
+    .section-2__up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .section-2__up h1 {
+        font-weight: 600;
+        text-align: center;
+        width: 35rem;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    .section-2__up p {
+        font-weight: 400;
+        text-align: center;
+        width: 30rem;
+    }
+    /*down side*/
+    .section-2__down {
+        display: flex;
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+    /*cards*/
+    .section-2__down-card {
+        width: 12rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .section-2__down-card h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+    .section-2__down-card p {
+        font-size: .8rem;
+    }
+    .section-2__down-card img {
+        max-width: 5rem;
+    }
+    /*section 3*/
+    .section-3 {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*left side*/
+    .section-3__left {
+        padding: 8rem;
+    }
+    .section-3__left h1 {
+        color: #6e7afc;
+        font-weight: 600;
+    }
+    .section-3__left p {
+        color: rgb(33, 36, 41);
+        margin: 1rem 0;
+    }
+    #button {
+        color: #6e7afc;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: .75rem;
+    }
+    /*hover button*/
+    #button:hover>i {
+        transform: translateX(3rem);
+        transition: 2s;
+    }
+    /*section4*/
+    .section-4 {
+        background-color: #171219;
+        display: grid;
+        grid-template-rows: 12rem 1fr;
+        color: white;
+        padding: 1rem;
+    }
+    /*up section*/
+    .section-4__up {
+        padding: 5rem 20rem;
+        text-align: center;
+    }
+    .section-4__up h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .section-4__up p {
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+    /*down section*/
+    .section-4__down {
+        padding: 4.5rem 20rem;
+        margin: 0 auto;
+    }
+    .section-4__input {
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+    }
+    .section-4__input::placeholder {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs {
+        display: flex;
+        color: black;
+        font-weight: 300;
+    }
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        background-color: white;
+        width: 7.5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+    /*button*/
+    #section-4__button {
+        transition: .3s;
+        font-size: 1.1rem;
+        color: white;
+        background-color: #ef4e29;
+        margin-top: 1rem;
+        width: 20rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+    }
+    /*button hover*/
+    #section-4__button:hover {
+        background-color: #171219;
+        font-size: 1.3rem;
+        transition: 1s;
+    }
+    #section-4__p {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*section 2*/
+    .section-2__down {
+        padding: 2rem;
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-2__down-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .section-2__down-card img {
+        max-width: 3rem;
+    }
+    /*section 3*/
+    .section-3__left {
+        padding: 5rem;
+    }
+    .section-3__right {
+        padding: 2rem;
+    }
+    /*section 4*/
+    .section-4__up {
+        padding: 5rem 8rem;
+    }
+    /*down*/
+    .section-4__down {
+        padding: 0;
+    }
+    .section-4__input {
+        width: 18rem;
+        height: 2rem;
+    }
+    .section-4__input::placeholder {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        width: 6.5rem;
+        padding: .2rem 1rem;
+    }
+    /*button*/
+    #section-4__button {
+        font-size: 1rem;
+        width: 18rem;
+        height: 1.8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /*nav bar right size*/
+    .nav__right-size {
+        padding-right: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: .6rem;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+    /*main section*/
+    /*main info section*/
+    .main h1 {
+        font-size: 2rem;
+    }
+    .main p {
+        font-size: .55rem;
+    }
+    /*main info button*/
+    #button-purple {
+        font-size: .55rem;
+    }
+    /*section 3*/
+    .section-3__left {
+        padding: 3.5rem;
+    }
+    .section-3__left h1 {
+        font-size: 1rem;
+        width: 15rem;
+    }
+    .section-3__right {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+    }
+    /*section 4*/
+    /*section 4*/
+    .section-4__up {
+        padding: 5rem 8rem;
+    }
+    .section-4__up h1 {
+        font-size: 2rem;
+    }
+    .section-4__up p {
+        font-size: .8rem;
+    }
+    /*down*/
+    .section-4__input {
+        width: 15rem;
+        height: 1.5rem;
+    }
+    .section-4__input::placeholder {
+        font-size: .7rem;
+        padding: 1rem;
+    }
+    .section-4__down p {
+        margin: 1rem 0;
+        font-size: .9rem;
+    }
+    /*both inputs*/
+    .section-4__down-both-inputs div {
+        margin-right: 1rem;
+        width: 5rem;
+        padding: .2rem 1rem;
+        font-size: .6rem;
+    }
+    /*button*/
+    #section-4__button {
+        font-size: .8rem;
+        width: 15rem;
+        height: 1.5rem;
+    }
+}
